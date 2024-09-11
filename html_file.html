@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Londrina Shadow' rel='stylesheet'>
+
+    <link href='https://fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        
+        body{
+             margin: 0px;
+            padding: 0px; 
+
+            background: url(great.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Londrina Shadow';
+            font-size: 22px;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%; 
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+            
+        }
+        .container::before{
+            position:absolute;
+            filter: blur(10px);
+            z-index: -1;
+            
+
+        }
+         .header{
+            position:sticky;
+         }
+        #item1{
+            /* border: 2px solid red; */
+            display: inline-block;
+            left: 27px;
+            top: 20px;
+            position: absolute;
+            font-size: 18px;
+        }
+        #item1:hover{
+            cursor: pointer;
+        }
+        #item1 img {
+            border-radius: 89px;
+            
+
+        }
+        #item1 p{
+            
+            display: block;
+            margin: 3px auto;
+            width: 75px;
+        }
+        #item2{
+            
+            /* border: 2px solid blue; */
+             display:block;
+            width: 45%;
+            margin: 20px auto;
+            overflow: auto;
+            /* background-color: rgb(53, 50, 50); */
+
+        }
+        #item3{
+            position: absolute;
+            /* border: 2px solid green; */
+            right: 23px;
+            top: 20px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+
+        .navbar li{
+            list-style: none;
+            display: inline-block;
+            font-size: 24px;    
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding:15px 23px;
+        }
+        .navbar li a:hover , .navbar li a.active{
+         text-decoration: underline;
+         color: silver;
+         
+            
+        }
+        .navbar li a:active{
+            color: rgb(146, 201, 249);
+            
+        }
+
+        .btn{
+            font-family: 'Londrina Shadow';
+            background-color: black;
+            color: white;
+            margin:  10px 5px;
+            border-radius: 10px;
+            font-size: 18px;
+
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+        }
+        .btn:active{
+            color: rgb(146, 201, 249);
+        }
+        .btn:hover{
+            cursor: pointer;
+            /* color: silver; */
+            text-decoration: underline;
+        }
+        .btn a:hover{
+            color: silver;
+
+        }
+        .welcome{
+            text-align: center;
+            margin: 5em 0px;
+        }
+        .welcome p{
+            font-family: 'Londrina Solid';
+            font-size: 22px;
+            color: white;
+            /* background-color: rgb(44, 43, 43); */
+        }
+        .footer{
+            
+            border-radius: 50px;
+            /* position:absolute; */
+            bottom: -5px;
+            font-size: 16px;
+            font-family: 'Londrina Solid';
+            padding: 34px 25px;
+            
+           
+        }
+        .footer p{
+            display: inline-block;
+        }
+        .footer a{
+            text-decoration: none;
+            color: rgb(117, 117, 117);
+            
+        }
+        .footer a:hover{
+            text-decoration: underline;
+            color: rgb(183, 181, 181);
+        }
+
+        .footer p1{
+            position:absolute;
+            right: 20px;
+            margin-top: 15px;
+
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <div class="head" id="item1"><img src="logo-color.png" height="60px" width="65px" alt="">
+        <p>Let's Build</p></div>
+        <div class="head" id="item2">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="about_me.html" >About Me</a></li>
+                    <li><a href="projects.html" >Projects</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="head" id="item3"><button class="btn"><a href="#">Sign-Up</a></button>
+        <button class="btn"><a href="#">Log-In</a></button></div>
+    </header>
+
+   <section class="welcome">
+    <div>
+        <h2>WELCOME TO MY PORTFOLIO</h2>
+       <p>
+        Hello, my name is Mayank and i am a very passionate web designer and
+        this is my portfolio website. In this site you will be exploring about my experience and work projects. I am curently pursuing BSc(H) Computer Science from Keshav Mahavidalaya,Delhi University. I have been practicing frontend development from the past 1.5 months.
+       </p> 
+    </div>
+   </section>
+
+   <footer class="footer">
+
+    <p>Connect With Me :</p>
+    <a href="https://www.linkedin.com/in/mayank-150919269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkdIn</a> | <a href="www.Github.com">GitHub</a>
+    <p1>&copy; all rights are reserverd </p1>
+   </footer>
+</div>
+    
+</body>
+</html>
